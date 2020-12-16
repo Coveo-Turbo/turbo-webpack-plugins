@@ -14,16 +14,10 @@ const entries = {
 module.exports = {
   mode: 'production',
   entry: entries,
+  target: 'node',
   output: {
     libraryTarget: 'commonjs',
     path: path.join(__dirname, 'dist'),
-  },
-  resolve: {
-    extensions: ['.js'],
-    alias: {
-      http: false,
-      https: false
-    }
   },
   plugins: plugins,
   optimization: {
