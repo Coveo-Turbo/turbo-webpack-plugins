@@ -1,11 +1,11 @@
 {
     "name": "@coveops/turbo-webpack-plugins",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "rm -rf dist/ && mkdir dist/ && cp src/index.js dist/",
+        "build": "webpack --config webpack.config.js",
         "precompile": "npm run build"
     },
     "keywords": [],
@@ -15,10 +15,11 @@
         "dist"
     ],
     "dependencies": {
-        "@coveops/localization-manager": "^1.0.0",
-        "coveo-search-ui": "^2.10081.5"
+        "clean-webpack-plugin": "^3.0.0",
+        "webpack": "^5.10.3"
     },
     "devDependencies": {
-        "@coveops/cli": "^0.13.2"
+        "@coveops/cli": "^0.13.2",
+        "webpack-cli": "^4.2.0"
     }
 }
