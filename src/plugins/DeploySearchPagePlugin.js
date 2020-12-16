@@ -93,7 +93,7 @@ class DeploySearchPagePlugin {
     params.path = method === 'PUT' ? `${params.path}/${name}` :  params.path;
     const data = JSON.stringify({ name, url, inlineContent });
     params.headers['Content-Length'] = data.length;
-    console.log(data);
+    // console.log(data);
     return httpRequest(params, data)
   }
   updateSearchPage() {
