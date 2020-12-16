@@ -1,4 +1,4 @@
-# turbo-webpack-plugins
+# TurboWebpackPlugins
 
 Disclaimer: This component was built by the community at large and is not an official Coveo JSUI Component. Use this component at your own risk.
 
