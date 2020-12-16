@@ -15,13 +15,13 @@ npm i @coveops/turbo-webpack-plugins
 Typescript:
 
 ```javascript
-import { turbo-webpack-plugins, Iturbo-webpack-pluginsOptions } from '@coveops/turbo-webpack-plugins';
+import { DeploySearchPagePlugin } from '@coveops/turbo-webpack-plugins';
 ```
 
 Javascript
 
 ```javascript
-const turbo-webpack-plugins = require('@coveops/turbo-webpack-plugins').turbo-webpack-plugins;
+const DeploySearchPagePlugin = require('@coveops/turbo-webpack-plugins').DeploySearchPagePlugin;
 ```
 
 3. You can also expose the component alongside other components being built in your project.
@@ -37,26 +37,6 @@ export * from '@coveops/turbo-webpack-plugins'
 ```
 
 > Disclaimer: Unpkg should be used for testing but not for production.
-
-5. Include the component in your template as follows:
-
-Place the component in your markup:
-
-```html
-<div class="Coveoturbo-webpack-plugins"></div>
-```
-
-## Extending
-
-Extending the component can be done as follows:
-
-```javascript
-import { turbo-webpack-plugins, Iturbo-webpack-pluginsOptions } from "@coveops/turbo-webpack-plugins";
-
-export interface IExtendedturbo-webpack-pluginsOptions extends Iturbo-webpack-pluginsOptions {}
-
-export class Extendedturbo-webpack-plugins extends turbo-webpack-plugins {}
-```
 
 ## Contribute
 
