@@ -15,7 +15,7 @@ module.exports = {
   mode: 'production',
   entry: entries,
   output: {
-    libraryTarget: 'umd',
+    libraryTarget: 'commonjs',
     path: path.join(__dirname, 'dist'),
   },
   resolve: {
