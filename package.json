@@ -1,13 +1,11 @@
 {
     "name": "@coveops/turbo-webpack-plugins",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "coveops build TurboWebpackPlugins --template vanilla",
-        "watch": "coveops build TurboWebpackPlugins --template vanilla --watch",
-        "serve": "coveops serve",
+        "build": "rm -rf dist/ && mkdir dist/ && cp src/index.js dist/",
         "precompile": "npm run build"
     },
     "keywords": [],
